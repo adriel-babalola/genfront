@@ -1,73 +1,78 @@
-# React + TypeScript + Vite
+# 🚀 Genesis — NASA Space Apps Challenge 2025
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+**Genesis** is an AI-powered knowledge engine built for the **NASA Space Apps Challenge 2025**.  
+It connects directly to **NASA’s Open Science Data Repository (OSDR)**, enabling users to search, analyze, and visualize complex space biology datasets using natural language.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🛰️ Overview
 
-## React Compiler
+Genesis bridges the gap between **scientific data and accessibility** by integrating artificial intelligence with open science.  
+Users can ask research-level questions in plain English and instantly receive structured, data-backed insights powered by NASA’s open datasets.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+---
 
-## Expanding the ESLint configuration
+## 💡 Features
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+- 🔍 **Natural Language Search** for OSDR datasets  
+- 🧬 **AI-Powered Insights** using Mistral-7B via Ollama  
+- ⚙️ **FastAPI Backend** for data processing and API orchestration  
+- 🌐 **React.js + Tailwind CSS Frontend** for an interactive, minimal UI  
+- 📊 **Real-Time Data Visualization** for space biology parameters  
+- 🧠 **Open-Source Knowledge Access** promoting NASA’s Open Science mission  
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+---
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+## 🧰 Tech Stack
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+**Frontend:** React.js, TypeScript, Tailwind CSS  
+**Backend:** Python, FastAPI  
+**AI Layer:** Mistral-7B (via Ollama)  
+**Database:** NASA OSDR API  
+**Version Control:** Git & GitHub  
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+---
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+## 👩‍💻 Team & Roles
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+- **Adriel Babalola** — Full-Stack Developer / AI Integrator  
+- *NASA Space Apps Challenge 2025 Team Project*
+
+---
+
+## 🧠 How It Works
+
+1. **User Query:** A user inputs a research question.  
+2. **Data Retrieval:** FastAPI fetches relevant datasets from NASA OSDR.  
+3. **AI Processing:** Mistral-7B processes the data and generates insights.  
+4. **Visualization:** React frontend displays results interactively.  
+
+---
+
+## 🌍 Impact
+
+Genesis helps **scientists, students, and innovators** easily explore NASA’s open data, promoting **open science, collaboration, and discovery** in the space biology community.
+
+---
+
+## 🪐 Future Goals
+
+- Integrate more NASA open data endpoints  
+- Add a user dashboard for saved research  
+- Implement multilingual query support  
+
+---
+
+## ⚖️ License
+
+This project is open-source under the **MIT License**.  
+
+---
+
+## ✨ Acknowledgments
+
+Built for the **NASA International Space Apps Challenge 2025**.  
+Powered by **NASA OSDR**, **Ollama**, and **Mistral-7B**.
+
+---
+
